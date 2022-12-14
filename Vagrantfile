@@ -62,7 +62,7 @@ Vagrant.configure("2") do |config|
       shutdown: true,
       time_synchronization: true,
       vss: true
-  }
+    }
   end
 
   # timeout of waiting for image to stop running - may be a deprecated setting
