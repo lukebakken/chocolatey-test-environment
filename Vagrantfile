@@ -12,6 +12,7 @@ end
 
 # http://docs.vagrantup.com/v2/vagrantfile/machine_settings.html
 Vagrant.configure("2") do |config|
+  config.vm.synced_folder ".", "/vagrant", disabled: true
   # This setting will download the Vagrant Cloud box at
   # https://app.vagrantup.com/chocolatey/boxes/test-environment
   config.vm.box = "chocolatey/test-environment"
